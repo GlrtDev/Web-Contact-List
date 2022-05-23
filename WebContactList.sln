@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32505.173
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebContactList", "WebContactList\WebContactList.csproj", "{38A5AF27-A9DA-4946-831E-3BB0F43E8B80}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "WebContactListFrontend", "WebContactListFrontend\WebContactListFrontend.esproj", "{F667B8B0-DF51-4D64-87DB-87AA571ECB25}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{38A5AF27-A9DA-4946-831E-3BB0F43E8B80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38A5AF27-A9DA-4946-831E-3BB0F43E8B80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38A5AF27-A9DA-4946-831E-3BB0F43E8B80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38A5AF27-A9DA-4946-831E-3BB0F43E8B80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F667B8B0-DF51-4D64-87DB-87AA571ECB25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F667B8B0-DF51-4D64-87DB-87AA571ECB25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F667B8B0-DF51-4D64-87DB-87AA571ECB25}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{F667B8B0-DF51-4D64-87DB-87AA571ECB25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F667B8B0-DF51-4D64-87DB-87AA571ECB25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F667B8B0-DF51-4D64-87DB-87AA571ECB25}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EEA9F6BD-3942-4A2E-B6E5-33C652D66106}
+	EndGlobalSection
+EndGlobal

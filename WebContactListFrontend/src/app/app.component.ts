@@ -1,0 +1,24 @@
+import { HttpClient } from '@angular/common/http';
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+  
+
+  constructor(http: HttpClient) {
+    
+  }
+  isUserAuthenticated = (): boolean => {
+    return false
+  }
+  logOut = () => {
+    localStorage.removeItem("jwt");
+  }
+
+  title = 'WebContactListFrontend';
+}
+

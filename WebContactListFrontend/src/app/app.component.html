@@ -1,0 +1,21 @@
+<h1 id="tableLabel">Contact list</h1>
+<br>
+<div *ngIf="isUserAuthenticated()" style="color:blue;">
+  <h2>
+    YOU ARE LOGGED IN
+  </h2>
+</div>
+<br>
+
+<hr>
+<nav>
+  <a class="nav-item" [routerLink]="['/']">Main Page</a>
+  <a class="nav-item" [routerLink]="['/add']">Add contact</a>
+  <p *ngIf="!isUserAuthenticated()"><a routerLink="/login">Login</a></p>
+  <p *ngIf="isUserAuthenticated()"><a class="logout" (click)="logOut()">Logout</a></p>
+</nav>
+<hr>
+
+<div class="outer-outlet">
+  <router-outlet></router-outlet>
+</div>

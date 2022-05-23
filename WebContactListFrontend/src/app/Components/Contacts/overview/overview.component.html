@@ -1,0 +1,23 @@
+<div class="overview-container">
+  <div *ngFor="let contact of contacts">
+    <div class="overview-container-image-size">
+      <div>
+        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseDetails{{contact.id}}" role="button">
+          <p style="padding-left: 10px;">
+            <strong>Contact: </strong><span>{{contact.name}} {{contact.surname}}</span>
+          </p>
+        </a>
+
+        <div class="collapse" id="collapseDetails{{contact.id}}">
+          <div class="card card-body">
+            <app-details [contact]="contact"></app-details>
+          </div>
+        </div>
+
+        
+      </div>
+      <hr />
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,18 @@
+<hr>
+<p style="padding-left: 10px;">
+  <strong>Category: </strong><span>{{contact.category}}</span>
+</p>
+<p style="padding-left: 10px;">
+  <strong>Email: </strong><span>{{contact.email}}</span>
+</p>
+<p style="padding-left: 10px;">
+  <strong>Phone: </strong><span>{{contact.phone}}</span>
+</p>
+<p style="padding-left: 10px;">
+  <strong>BirthDate: </strong><span>{{contact.birthDate}}</span>
+</p>
+<p *ngIf="loggedIn">
+  <app-delete [contact]="contact"></app-delete>
+  <app-update [contact]="contact"></app-update>
+<p>
+

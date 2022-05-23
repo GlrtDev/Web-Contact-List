@@ -1,0 +1,57 @@
+
+
+<div style="width:25%;float:left">
+  <p>Add contact info</p>
+  <p>
+    <strong>Name: </strong>
+    <input type="text" [(ngModel)]="contact.name" />
+  </p>
+
+  <p>
+    <strong>Surname: </strong>
+    <input type="text" [(ngModel)]="contact.surname" />
+  </p>
+
+  <p>
+    <strong>Category: </strong>
+    <input type="number" [(ngModel)]="contact.category" />
+  </p>
+
+  <p>
+    <strong>Email: </strong>
+    <input type="text" [(ngModel)]="contact.email" />
+  </p>
+
+  <p>
+    <strong>Phone: </strong>
+    <input type="number" [(ngModel)]="contact.phone" />
+  </p>
+
+  <p>
+    <strong>BirthDate: </strong>
+    <input type="text" [(ngModel)]="contact.birthDate" />
+  </p>
+
+</div>
+
+<div style="width:25%;float:left">
+  <div class="overview-container-image-size">
+    <div>
+      <p style="padding-left: 10px;">
+        <strong>Name: </strong><span>{{contact.name}} {{contact.surname}}</span>
+      </p>
+      <p style="padding-left: 10px;">
+        <strong>Category: </strong><span>{{contact.category}}</span>
+      </p>
+      <p style="padding-left: 10px;">
+        <strong>Email: </strong><span>{{contact.email}}</span>
+      </p>
+      <p style="padding-left: 10px;">
+        <strong>Phone: </strong><span>{{contact.phone}}</span>
+      </p>
+      <p style="padding-left: 10px;">
+        <strong>BirthDate: </strong><span>{{contact.birthDate}}</span>
+      </p>
+    </div>
+  <button (click)="onSubmit()">Add contact</button>
+</div>
